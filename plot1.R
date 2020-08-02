@@ -7,7 +7,7 @@ mydat <- read.table("household_power_consumption.txt", header = T, sep = ";", st
 # Turn Date variable as class Date
 mydat$Date <- as.Date(mydat$Date,format="%d/%m/%Y")
 
-#Subset the datain 2007-02-01 and 2007-02-02
+#Subset the data in 2007-02-01 and 2007-02-02
 date_subsetted <- subset(mydat, Date >= as.Date("2007-02-01") & Date <= as.Date("2007-02-02"))
 
 #Plotting
